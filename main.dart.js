@@ -10282,11 +10282,9 @@ eB:function eB(a,b){this.a=a
 this.b=b},
 Aa:function Aa(){},
 LX:function LX(a){this.b=a},
-og:function og(a,b,c,d){var _=this
-_.d=a
-_.ch=b
-_.cy=c
-_.a=d},
+og:function og(a,b,c){this.d=a
+this.cy=b
+this.a=c},
 Or:function Or(){},
 qU:function qU(a){var _=this
 _.a=_.e=_.d=null
@@ -23751,19 +23749,18 @@ $ir:1}
 P.BP.prototype={}
 P.BQ.prototype={}
 F.z3.prototype={
-H:function(a){var t="Ruben Mondejar, PhD"
-return new S.og(new F.ys(t,null),t,X.Vz(null,C.kS),null)}}
+H:function(a){return new S.og(new F.ys("Ruben Mondejar, PhD",null),X.Vz(null,C.kS),null)}}
 F.ys.prototype={
-H:function(a){var t=null,s=u.E,r=new E.pK(H.b([E.SB(L.GS(C.tJ)),E.SB(L.GS(C.tK)),E.SB(L.GS(C.tI))],s),t),q=L.jk(this.c,t,t,t,t,t),p=r.grg()
+H:function(a){var t=null,s=L.jk(this.c,t,t,t,t,t),r=u.E,q=new E.pK(H.b([E.SB(L.GS(C.tJ)),E.SB(L.GS(C.tK)),E.SB(L.GS(C.tI))],r),t),p=q.grg()
 p=p.b
 if(p==null)p=0
-return M.Vo(t,new U.nb(3,M.Vo(new E.mK(q,r,new P.S(1/0,56+p),t),new E.pM(H.b([new E.vf(t),new U.wY(t),new A.uy(t)],s),t)),t))}}
+return M.Vo(t,new U.nb(3,M.Vo(new E.mK(s,q,new P.S(1/0,56+p),t),new E.pM(H.b([new E.vf(t),new U.wY(t),new A.uy(t)],r),t)),t))}}
 A.uy.prototype={
 H:function(a){var t=null,s=u.E
 return new L.lt("Dissertation",H.b([L.jk("Subject",t,t,K.ax(a).S.e,t,t),M.cj(t,T.ik(H.b([T.K5(t,t,C.bk,!0,t,Q.yA(t,K.ax(a).S.y,"Distributed AOP Middleware for Large-Scale Scenarios "),C.cl,t,t,1,C.al),M.cj(t,T.a0c(H.b([new E.hL("[TDX]","https://www.tdx.cat/handle/10803/8486#page=1",1.4,t),C.yW,new E.hL("[PDF]","https://www.tdx.cat/bitstream/handle/10803/8486/thesis.pdf?sequence=1",1.4,t)],s),C.an,C.b_),t,new S.al(100,300,0,1/0),t,t,t,new V.aj(90,10,90,10),t)],s),C.an,C.ay,C.oi),t,t,t,t,t,new V.aj(20,20,20,20),t),new Q.fn("Abstract","In this PhD dissertation we present a distributed middleware proposal for large-scale application development. Our main aim is to separate the distributed concerns of these applications, like replication, which can be integrated independently and transparently.\n\nOur approach is based on the implementation of these concerns using the paradigm of distributed aspects. In addition, our proposal benefits from the peer-to-peer (P2P) networks and aspect-oriented programming (AOP) substrates to provide these concerns in a decentralized, decoupled, efficient, and transparent way.\n\nOur middleware architecture is divided into two layers: a composition model and a scalable deployment platform for distributed aspects. Finally, we demonstrate the viability and applicability of our model via implementation and experimentation of prototypes in real large-scale networks.",t),new Q.fn("Date","Thursday, 29th April 2010",t),new Q.fn("Supervisors","Dr. Pedro Garc\xeda-L\xf3pez and Dr. Carles Pairot",t)],s),t)}}
 E.vf.prototype={
 H:function(a){var t=null,s=u.E
-return new L.lt("Home Page",H.b([T.ik(H.b([T.ik(H.b([M.cj(t,U.Ux("assets/images/photo.png",C.mX),t,t,t,300,t,new V.aj(15,15,15,15),t)],s),C.an,C.ay,C.b_),T.ik(H.b([M.cj(t,L.jk("Dr. Rub\xe9n Mond\xe9jar",t,t,A.lA(t,t,t,t,t,t,t,t,t,t,t,t,t,C.bT,t,t,!0,t,t,t,t,t,t),C.fz,t),t,t,t,t,t,new V.aj(5,5,5,5),t),M.cj(t,L.jk("PhD in Computer Engineering",t,t,t,C.ck,t),t,t,t,t,t,new V.aj(5,5,5,5),t),M.cj(t,new E.hL("ruben.mondejar.andreu at gmail.com","mailto:ruben.mondejar.andreu@gmail.com",t,t),t,t,t,t,t,new V.aj(5,5,5,5),t),M.cj(t,new E.hL("Twitter: @Ruuben4","https://twitter.com/ruuben4",t,t),t,t,t,t,t,new V.aj(5,5,5,20),t)],s),C.an,C.ay,C.b_),new Q.fn("About Me","I am currently working at AUTO1 Group GmbH as a Team Lead Software Engineer, with microservices architectures and cloud computing. I previously worked at MBition GmbH as a Senior Software Engineer mainly focused on backend cloud services for mobile apps.\n\nBefore that, I worked at Tarragona Provincial Council (local government) with a permanent position, as a Lead Software Engineer, building web software architectures and a distributed BPM platform for process automation.\n\nI also worked as a part-time instructor and research collaborator at the Universitat Rovira i Virgili and Universitat Oberta de Catalunya mainly in courses of Software Architectures and Distributed Systems. In addition, as a member of the Architecture and Telematic Services research group, I published more than 30 papers in software engineering and distributed architectures subjects.",t)],s),C.an,C.ay,C.b_)],s),t)}}
+return new L.lt("Home Page",H.b([T.ik(H.b([T.ik(H.b([M.cj(t,U.Ux("assets/images/photo.png",C.mX),t,t,t,300,t,new V.aj(15,15,15,15),t)],s),C.an,C.ay,C.b_),T.ik(H.b([M.cj(t,L.jk("Dr. Rub\xe9n Mond\xe9jar",t,t,A.lA(t,t,t,t,t,t,t,t,t,t,t,t,t,C.bT,t,t,!0,t,t,t,t,t,t),C.fz,t),t,t,t,t,t,new V.aj(5,5,5,5),t),M.cj(t,L.jk("PhD in Computer Engineering",t,t,t,C.ck,t),t,t,t,t,t,new V.aj(5,5,5,5),t),M.cj(t,new E.hL("ruben.mondejar.andreu at gmail.com","mailto:ruben.mondejar.andreu@gmail.com",t,t),t,t,t,t,t,new V.aj(5,5,5,5),t),M.cj(t,new E.hL("Twitter: @Ruuben4","https://twitter.com/ruuben4",t,t),t,t,t,t,t,new V.aj(5,5,5,20),t)],s),C.an,C.ay,C.b_),new Q.fn("About Me","I am currently working at AUTO1 Group GmbH in Berlin as a Team Lead Software Engineer, with microservices architectures and cloud computing. I previously worked at MBition GmbH as a Senior Software Engineer mainly focused on backend cloud services for mobile apps.\n\nBefore that, I worked at Tarragona Provincial Council (local government) with a permanent position, as a Lead Software Engineer, building web software architectures and a distributed BPM platform for process automation.\n\nI also worked as a part-time instructor and research collaborator at the Universitat Rovira i Virgili and Universitat Oberta de Catalunya mainly in courses of Software Architectures and Distributed Systems. In addition, as a member of the Architecture and Telematic Services research group, I published more than 30 papers in software engineering and distributed architectures subjects.",t)],s),C.an,C.ay,C.b_)],s),t)}}
 U.wY.prototype={
 H:function(a){var t=null,s=u.E
 return new L.lt("Profile",H.b([M.cj(t,T.ik(H.b([new K.k6("linkedin.jpg","https://www.linkedin.com/in/rubenmondejar",t),new T.eD(new V.aj(10,10,10,10),t,t),new K.k6("gscholar.png","https://scholar.google.com/citations?hl=es&user=NKohlloAAAAJ&sortby=pubdate&view_op=list_works&pagesize=100",t)],s),C.an,C.ay,C.b_),t,new S.al(300,800,0,1/0),t,t,t,new V.aj(20,20,20,20),t),new Q.fn("Education","In April 2010, I received with honors my Ph. D. degree in Computer Engineering at Universitat Rovira i Virgili in the Department of Computer Science and Mathematics under the supervision of Dr. Pedro Garc\xeda-L\xf3pez, and Dr. Carles Pairot.\n\nMaster Degree in Computer Science Engineering and Security (June 2007), Universitat Rovira i Virgili.\n\nM. Sc. in Computer Engineering (June 2005), Universitat Rovira i Virgili.\n\nB. Sc. in Computer Engineering - Hardware Speciality (June 2003), Universitat Rovira i Virgili.",t),new Q.fn("Research Stage","I collaborated with the ECOO Team at LORIA, affiliated to INRIA during a stage of 4 months in Nancy (France), from March to July 2008.\n\nI helped on the validation of Wooki project over the Grid'5000 platform, and the design and implementation of the UniWiki project, under the supervision of Dr. Pascal Molli, and Dr. Pascal Urso.",t)],s),t)}}
@@ -25525,13 +25522,13 @@ case 2:s=3
 return C.r6
 case 3:return P.aW()
 case 1:return P.aX(q)}}},u.EX)},
-H:function(a){var t,s=this,r=null,q=s.a,p=s.e,o=q.d,n=q.ch
+H:function(a){var t,s=this,r=null,q=s.a,p=s.e,o=q.d
 q=q.cy
 q=q.c
 if(q==null)q=C.kS
 t=s.gvL()
 s.a.toString
-return new K.pi(new S.Or(),new S.qa(r,r,r,new S.Ol(),o,C.uM,r,r,p,new S.Om(s),n,r,C.xK,q,r,t,r,r,C.nL,!1,!1,!1,!1,new S.On(),!0,r,r,new N.hd(s,u.By)),r)}}
+return new K.pi(new S.Or(),new S.qa(r,r,r,new S.Ol(),o,C.uM,r,r,p,new S.Om(s),"",r,C.xK,q,r,t,r,r,C.nL,!1,!1,!1,!1,new S.On(),!0,r,r,new N.hd(s,u.By)),r)}}
 S.Ol.prototype={
 $1$2:function(a,b,c){var t=H.b([],u.F8),s=$.G,r=c.j("F<0>"),q=c.j("aL<0>"),p=S.Sp(C.cr),o=H.b([],u.tD),n=$.G,m=a==null?C.vn:a
 return new V.oi(b,!1,t,new N.bx(null,c.j("bx<jC<0>>")),new N.bx(null,u.DU),new S.IK(),null,new P.aL(new P.F(s,r),q),p,o,m,new P.aL(new P.F(n,r),q),c.j("oi<0>"))},
