@@ -9,7 +9,9 @@ class Dissertation extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return TabPanel('Dissertation', <Widget>[
-      Text('Subject', style: Theme.of(context).textTheme.headline5),
+      Text('Dissertation',
+          style: Theme.of(context).textTheme.headline5
+      ),
       Container(
         padding: EdgeInsets.all(20),
         child:

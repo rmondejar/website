@@ -8,13 +8,8 @@ class TabPanel extends StatelessWidget {
   const TabPanel(this.title, this.content);
 
   Widget _createHeader(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(40),
-      child:
-      Text(
-          title,
-          style: Theme.of(context).textTheme.headline3
-      ),
+    return Padding(
+      padding: EdgeInsets.all(20),
     );
   }
 

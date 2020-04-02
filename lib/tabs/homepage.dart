@@ -63,7 +63,7 @@ class HomePage extends StatelessWidget {
                        'I also worked as a part-time instructor and research '
                        'collaborator at the Universitat Rovira i Virgili and Universitat Oberta de Catalunya mainly '
                        'in courses of Software Architectures and Distributed Systems. In addition, as a member of '
-                       'the Architecture and Telematic Services research group, I published more than 30 papers in '
+                       'the Cloud and Distributed Systems Lab (CLOUDLAB), I published more than 30 papers in '
                        'software engineering and distributed architectures subjects.'
                ),
           ],
