@@ -14,7 +14,7 @@ const RESOURCES = {
 "/assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "/assets/FontManifest.json": "01700ba55b08a6141f33e168c4a6c22f",
 "/main.dart.js": "62550ac253fc9be7e18936f2a2bb6c9b",
-"/index.html": "53fa77a6bf2fb23f21de4116bbaff1ab"
+"/index.html": "a3b52cadc05361695e12b107ce50dca6"
 };
 
 self.addEventListener('activate', function (event) {
