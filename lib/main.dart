@@ -41,7 +41,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-        title: 'hello',
+        title: 'Ruben Mondejar, PhD',
         home: DefaultTabController(
           length: 3,
           child: Scaffold(

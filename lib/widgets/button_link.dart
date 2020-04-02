@@ -22,7 +22,8 @@ class ButtonLink extends StatelessWidget {
         onTap: _onSelectButton,
         child: Image.asset(
           'assets/images/$imageName',
-          fit: BoxFit.scaleDown,
+          fit: BoxFit.fitWidth,
+
         )
     );
   }

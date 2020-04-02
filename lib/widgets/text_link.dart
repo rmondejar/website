@@ -5,8 +5,9 @@ class TextLink extends StatelessWidget {
 
   final String text;
   final String linkUrl;
+  final double scale;
 
-  const TextLink({this.text, this.linkUrl});
+  const TextLink({this.text, this.linkUrl, this.scale});
 
   _onSelectText() async {
     if (await canLaunch(linkUrl)) {
@@ -23,6 +24,7 @@ class TextLink extends StatelessWidget {
         child:
           Text(text,
               textAlign: TextAlign.left,
+              textScaleFactor: scale,
               style: TextStyle(decoration: TextDecoration.underline)
         ),
     );

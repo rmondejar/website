@@ -2,20 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../widgets/paragraph.dart';
 import '../widgets/text_link.dart';
+import '../widgets/tab_panel.dart';
 
 class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
 
-    return Column(
-          children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(40),
-              child: Text(
-                  'Home Page',
-                  style: Theme.of(context).textTheme.headline2),
-            ),
+    return TabPanel('Home Page', <Widget>[
             Column(
              children: <Widget>[
                Column(

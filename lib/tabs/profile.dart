@@ -2,23 +2,17 @@ import 'package:flutter/material.dart';
 
 import '../widgets/paragraph.dart';
 import '../widgets/button_link.dart';
+import '../widgets/tab_panel.dart';
 
 class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
 
-    return Column(
-        children: <Widget>[
-          Container(
-            padding: EdgeInsets.all(40),
-            child: Text(
-              'Profile',
-              style: Theme.of(context).textTheme.headline2),
-            ),
+    return TabPanel('Profile', <Widget>[
           Container(
             constraints: BoxConstraints(minWidth: 300, maxWidth: 800),
-            padding: EdgeInsets.all(40),
+            padding: EdgeInsets.all(20),
             child:
               Column(
                 children: <Widget>[
@@ -26,7 +20,10 @@ class Profile extends StatelessWidget {
                     imageName: 'linkedin.jpg',
                     linkUrl: 'https://www.linkedin.com/in/rubenmondejar',
                   ),
-
+                  ButtonLink(
+                    imageName: 'gscholar.png',
+                    linkUrl: 'https://scholar.google.com/citations?hl=es&user=NKohlloAAAAJ&sortby=pubdate&view_op=list_works&pagesize=100',
+                  ),
                 ],
             )
           ),
@@ -41,19 +38,6 @@ class Profile extends StatelessWidget {
                 'M. Sc. in Computer Engineering (June 2005), Universitat Rovira i Virgili.'
                 '\n\n'
                 'B. Sc. in Computer Engineering - Hardware Speciality (June 2003), Universitat Rovira i Virgili.'
-          ),
-          Container(
-              constraints: BoxConstraints(minWidth: 300, maxWidth: 800),
-              padding: EdgeInsets.all(40),
-              child:
-              Column(
-                children: <Widget>[
-                  ButtonLink(
-                    imageName: 'gscholar.png',
-                    linkUrl: 'https://scholar.google.com/citations?hl=es&user=NKohlloAAAAJ&sortby=pubdate&view_op=list_works&pagesize=100',
-                  ),
-                ],
-              )
           ),
           Paragraph(
               title: 'Research Stage',

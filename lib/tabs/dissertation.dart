@@ -2,38 +2,47 @@ import 'package:flutter/material.dart';
 
 import '../widgets/paragraph.dart';
 import '../widgets/text_link.dart';
+import '../widgets/tab_panel.dart';
 
 class Dissertation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(children: <Widget>[
-      Container(
-        padding: EdgeInsets.all(40),
-        child:
-            Text('Dissertation', style: Theme.of(context).textTheme.headline2),
-      ),
+
+    return TabPanel('Dissertation', <Widget>[
       Text('Subject', style: Theme.of(context).textTheme.headline5),
       Container(
         padding: EdgeInsets.all(20),
         child:
-        Row(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            RichText(
-              textAlign: TextAlign.center,
-              text: TextSpan(
-                  style: Theme.of(context).textTheme.bodyText1,
-                  text: 'Distributed AOP Middleware for Large-Scale Scenarios '
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                    style: Theme.of(context).textTheme.bodyText1,
+                    text:
+                        'Distributed AOP Middleware for Large-Scale Scenarios '
+                ),
               ),
-            ),
-                TextLink(
-                    text: '[TDX]',
-                    linkUrl: 'https://www.tdx.cat/handle/10803/8486#page=1'),
-                const Text(' '),
-                TextLink(
-                    text: '[PDF]',
-                    linkUrl:
-                    'https://www.tdx.cat/bitstream/handle/10803/8486/thesis.pdf?sequence=1'),
+              Container(
+                  constraints: BoxConstraints(minWidth: 100, maxWidth: 300),
+                  padding: EdgeInsets.fromLTRB(90,10,90,10),
+                child:
+                  Row( children: <Widget>[
+                    TextLink(
+                        text: '[TDX]',
+                        linkUrl: 'https://www.tdx.cat/handle/10803/8486#page=1',
+                        scale: 1.4,
+                    ),
+                    const Text(' '),
+                    TextLink(
+                        text: '[PDF]',
+                        linkUrl: 'https://www.tdx.cat/bitstream/handle/10803/8486/thesis.pdf?sequence=1',
+                        scale: 1.4,
+                    ),
+                  ],
+                  )
+              )
           ],
         ),
       ),
