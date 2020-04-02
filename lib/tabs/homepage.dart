@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
 
                Paragraph(
                    title: 'About Me',
-                   content: 'I am currently working at AUTO1 Group GmbH as a Team Lead Software Engineer, '
+                   content: 'I am currently working at AUTO1 Group GmbH in Berlin as a Team Lead Software Engineer, '
                        'with microservices architectures and cloud computing. I previously worked at MBition GmbH '
                        'as a Senior Software Engineer mainly focused on backend cloud services for mobile apps.'
                        '\n\n'

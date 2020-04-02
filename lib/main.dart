@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:url_launcher_web/url_launcher_web.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
@@ -24,7 +22,6 @@ class Website extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: title,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -47,6 +44,7 @@ class TabScreen extends StatelessWidget {
           length: 3,
           child: Scaffold(
             appBar: AppBar(
+              title: Text(title),
               bottom: TabBar(
                 tabs: [
                   Tab(icon: Icon(Icons.home)),
@@ -54,7 +52,6 @@ class TabScreen extends StatelessWidget {
                   Tab(icon: Icon(Icons.book)),
                 ],
               ),
-              title: Text(title),
             ),
             body: TabBarView(
               children: [
@@ -65,9 +62,6 @@ class TabScreen extends StatelessWidget {
             )
           ),
         ),
-
-
-
     );
   }
 }
