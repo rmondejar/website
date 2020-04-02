@@ -7,35 +7,30 @@ name: CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-
+    - name: Checkout
+      uses: actions/checkout@v2
+      
     - name: Setup Flutter
       uses: subosito/flutter-action@v1
       with:
         channel: 'beta'
-
-    - name: Enable Flutter Web
+        
+    - name: Enable Flutter web 
       run: flutter config --enable-web
-
+      
     - name: Install dependencies
-      run: flutter packages get
-
+      run: flutter pub get
+      
     - name: Build web
-      run: flutter build web
-
+      run: flutter build web --release
+      
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
