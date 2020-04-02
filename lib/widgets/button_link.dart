@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ButtonLink extends StatelessWidget {
-
   final String imageName;
   final String linkUrl;
 
@@ -18,14 +17,20 @@ class ButtonLink extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
         onTap: _onSelectButton,
-        child: Image.asset(
-          'assets/images/$imageName',
-          fit: BoxFit.fitWidth,
-
-        )
-    );
+        splashColor: Theme.of(context).primaryColor,
+        borderRadius: BorderRadius.circular(1),
+        child: Container(
+          padding: const EdgeInsets.all(1),
+          child: Image.asset(
+            'assets/images/$imageName',
+            fit: BoxFit.fitWidth,
+          ),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(1),
+          ),
+        ));
   }
-
 }
