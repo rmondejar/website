@@ -13,8 +13,16 @@ class TabPanel extends StatelessWidget {
       child:
       Text(
           title,
-          style: Theme.of(context).textTheme.headline2
+          style: Theme.of(context).textTheme.headline3
       ),
+    );
+  }
+
+  Widget _createFooter(BuildContext context) {
+    return Container(
+        padding: EdgeInsets.all(50),
+        child:
+          const Text('© 2003-2020 Ruben Mondejar | 2 April 2020', textAlign: TextAlign.center)
     );
   }
 
@@ -22,6 +30,7 @@ class TabPanel extends StatelessWidget {
   Widget build(BuildContext context) {
 
       content.insert(0, _createHeader(context));
+      content.add(_createFooter(context));
       return ListView(
           shrinkWrap: true,
           children: <Widget>[

@@ -9,7 +9,7 @@ import 'tabs/profile.dart';
 import 'tabs/dissertation.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Website());
 }
 
 void registerPlugins(PluginRegistry registry) {
@@ -17,32 +17,33 @@ void registerPlugins(PluginRegistry registry) {
   registry.registerMessageHandler();
 }
 
-class MyApp extends StatelessWidget {
+class Website extends StatelessWidget {
+
+  final String title = 'Ruben Mondejar, PhD';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Ruben Mondejar, PhD',
+      title: title,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Ruben Mondejar, PhD'),
+      home: TabScreen(title),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class TabScreen extends StatelessWidget {
 
   final String title;
 
-  MyHomePage({Key key, this.title}) : super(key: key);
+  TabScreen(this.title);
 
   @override
   Widget build(BuildContext context) {
 
-    return MaterialApp(
-        title: 'Ruben Mondejar, PhD',
-        home: DefaultTabController(
+    return Scaffold(
+        body: DefaultTabController(
           length: 3,
           child: Scaffold(
             appBar: AppBar(
@@ -61,14 +62,7 @@ class MyHomePage extends StatelessWidget {
                 Profile(),
                 Dissertation(),
               ],
-            ),
-            bottomNavigationBar: BottomAppBar(
-              shape: const CircularNotchedRectangle(),
-              child: Container(
-                  padding: EdgeInsets.all(20),
-                  child: Text('© 2003-2020 Ruben Mondejar | Last modified on: 1 March 2020', textAlign: TextAlign.center)
-              ),
-            ),
+            )
           ),
         ),
 

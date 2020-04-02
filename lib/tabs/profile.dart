@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 import '../widgets/paragraph.dart';
@@ -19,6 +21,9 @@ class Profile extends StatelessWidget {
                   ButtonLink(
                     imageName: 'linkedin.jpg',
                     linkUrl: 'https://www.linkedin.com/in/rubenmondejar',
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(10.0),
                   ),
                   ButtonLink(
                     imageName: 'gscholar.png',
