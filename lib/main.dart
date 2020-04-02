@@ -1,11 +1,20 @@
-import 'package:flutter/material.dart';
+import 'dart:ui';
 
-import './homepage.dart';
-import './profile.dart';
-import './dissertation.dart';
+import 'package:flutter/material.dart';
+import 'package:url_launcher_web/url_launcher_web.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+
+import 'tabs/homepage.dart';
+import 'tabs/profile.dart';
+import 'tabs/dissertation.dart';
 
 void main() {
   runApp(MyApp());
+}
+
+void registerPlugins(PluginRegistry registry) {
+  UrlLauncherPlugin.registerWith(registry.registrarFor(UrlLauncherPlugin));
+  registry.registerMessageHandler();
 }
 
 class MyApp extends StatelessWidget {
