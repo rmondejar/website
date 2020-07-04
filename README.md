@@ -1,7 +1,7 @@
 # Personal Website
 This website has been created with Flutter web and build with Github Actions
 
-Deployed version : https://rmondejar.github.io/website
+Live version: https://rmondejar.github.io
 
 References
 
