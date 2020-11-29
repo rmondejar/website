@@ -48,13 +48,21 @@ class HomePage extends StatelessWidget {
                            linkUrl: 'https://twitter.com/ruuben4'
                        )
                    ),
+                   Container(
+                       padding: EdgeInsets.fromLTRB(5,5,5,20),
+                       child: TextLink(
+                           text: 'Medium: Ruuben',
+                           linkUrl: 'https://https://ruuben.medium.com/'
+                       )
+                   ),
                  ]),
 
                Paragraph(
                    title: 'About Me',
-                   content: 'I am currently working at AUTO1 Group GmbH in Berlin as a Team Lead Software Engineer, '
-                       'with microservices architectures and cloud computing. I previously worked at MBition GmbH '
-                       'as a Senior Software Engineer mainly focused on backend cloud services for mobile apps.'
+                   content: 'I am currently working at uberall GmbH as a Engineering Manager. '
+                       'I previously worked in Berlin at AUTO1 Group GmbH as a Team Lead Software Engineer, '
+                       'and at MBition GmbH as a Senior Software Engineer focused on '
+                       'microservices architectures and cloud computing.'
                        '\n\n'
                        'Before that, I worked at Tarragona Provincial Council (local government) with a permanent '
                        'position, as a Lead Software Engineer, building web software architectures and a distributed '
