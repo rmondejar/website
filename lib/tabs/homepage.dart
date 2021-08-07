@@ -59,13 +59,13 @@ class HomePage extends StatelessWidget {
 
                Paragraph(
                    title: 'About Me',
-                   content: 'I am currently working at uberall GmbH as a Engineering Manager. '
+                   content: 'I am currently working at uberall GmbH as a Senior Engineering Manager. '
                        'I previously worked in Berlin at AUTO1 Group GmbH as a Team Lead Software Engineer, '
                        'and at MBition GmbH as a Senior Software Engineer focused on '
                        'microservices architectures and cloud computing.'
                        '\n\n'
                        'Before that, I worked at Tarragona Provincial Council (local government) with a permanent '
-                       'position, as a Lead Software Engineer, building web software architectures and a distributed '
+                       'position, as a Lead Software Engineer building web software architectures and a distributed '
                        'BPM platform for process automation.'
                        '\n\n'
                        'I also worked as a part-time instructor and research '

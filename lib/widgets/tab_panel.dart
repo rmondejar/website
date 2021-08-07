@@ -17,7 +17,7 @@ class TabPanel extends StatelessWidget {
     return Container(
         padding: EdgeInsets.all(50),
         child:
-          const Text('© 2003-2020 Ruben Mondejar | 2 April 2020', textAlign: TextAlign.center)
+          const Text('© 2003-2021 Ruben Mondejar | 7 August 2021', textAlign: TextAlign.center)
     );
   }
 
